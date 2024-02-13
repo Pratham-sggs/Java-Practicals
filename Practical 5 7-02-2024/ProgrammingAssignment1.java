@@ -7,11 +7,11 @@ class SY2022bit045 {
         String[] Reg_no50 = B.fiftyThousand();
         
         System.out.println("Approach 5k\t  \t10k\t  \t20k\t  \t50k");
-        System.out.println("LE501\t " + B.timeapr1(Reg_no5) + "\t  " + B.timeapr1(Reg_no10) + "\t  " + B.timeapr1(Reg_no20) + "\t  " + B.timeapr1(Reg_no50));
-        System.out.println("LE502\t " + B.timeapr2(Reg_no5) + "\t  " + B.timeapr2(Reg_no10) + "\t  " + B.timeapr2(Reg_no20) + "\t  " + B.timeapr2(Reg_no50));
-        System.out.println("LE503\t " + B.timeapr3(Reg_no5) + "\t  " + B.timeapr3(Reg_no10) + "\t  " + B.timeapr3(Reg_no20) + "\t  " + B.timeapr3(Reg_no50));
-        System.out.println("LE504\t " + B.timeapr4(Reg_no5) + "\t  " + B.timeapr4(Reg_no10) + "\t  " + B.timeapr4(Reg_no20) + "\t  " + B.timeapr4(Reg_no50));
-        System.out.println("LE505\t " + B.timeapr5(Reg_no5) + "\t  " + B.timeapr5(Reg_no10) + "\t  " + B.timeapr5(Reg_no20) + "\t  " + B.timeapr5(Reg_no50));
+        System.out.println("Aprr1\t " + B.timeapr1(Reg_no5) + "\t  " + B.timeapr1(Reg_no10) + "\t  " + B.timeapr1(Reg_no20) + "\t  " + B.timeapr1(Reg_no50));
+        System.out.println("Aprr2\t " + B.timeapr2(Reg_no5) + "\t  " + B.timeapr2(Reg_no10) + "\t  " + B.timeapr2(Reg_no20) + "\t  " + B.timeapr2(Reg_no50));
+        System.out.println("Aprr3\t " + B.timeapr3(Reg_no5) + "\t  " + B.timeapr3(Reg_no10) + "\t  " + B.timeapr3(Reg_no20) + "\t  " + B.timeapr3(Reg_no50));
+        System.out.println("Aprr4\t " + B.timeapr4(Reg_no5) + "\t  " + B.timeapr4(Reg_no10) + "\t  " + B.timeapr4(Reg_no20) + "\t  " + B.timeapr4(Reg_no50));
+        System.out.println("Aprr5\t " + B.timeapr5(Reg_no5) + "\t  " + B.timeapr5(Reg_no10) + "\t  " + B.timeapr5(Reg_no20) + "\t  " + B.timeapr5(Reg_no50));
     }
 
     public int getValidRegistrationsCountLE501(String[] registrations) {
