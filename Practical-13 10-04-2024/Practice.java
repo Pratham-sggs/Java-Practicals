@@ -25,7 +25,7 @@ abstract class SampleInterface{
 	abstract void info();
 }
 
-class Pratham extends SampleInterface{
+class Pratham implements sample{
 	
 	Pratham(){
 		
@@ -42,7 +42,7 @@ class Pratham extends SampleInterface{
 		System.out.println("Inside Pratham Init Block");
 	}
 	
-	public void info()
+	public void fun()
 	{
 		
 		System.out.println("Pratham Ushkewar");
@@ -55,8 +55,9 @@ class Pratham extends SampleInterface{
 
 class base{
 	public static void main(String args[]){
-		SampleInterface I = new Pratham();
-		I.info();
+		sample I = new Pratham();
+		I.fun();
+		System.out.println(I.a);
 	}
 	
 	base(){
