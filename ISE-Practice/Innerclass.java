@@ -44,7 +44,14 @@ class Ex extends HelloException
 	}
 	static public void fun(String ...args)
 	{
-		System.out.println(args[0]);
+		try{
+			System.out.println(args[0]);
+		}
+		catch(Exception e)
+		{
+			System.out.println("Caught and rethrown");
+			throw e;
+		}
 	}
 	public static void main(String ...args)
 	{
@@ -56,17 +63,28 @@ class Ex extends HelloException
 			String[] Check ={ "Hello", "Kal", "Pratham"};
 			for (String C : Check)
 			{
-				if(C.equals("Pratham"))
+				if(C.equals("K"))
 				{
-					HelloException me = new HelloException();
+					HelloException me = new HelloException("Hello Exception");
 					throw me;
 				}
 				System.out.println(C);
 			}
+			System.out.println("Try Fully Executed");
 		}
 		catch(HelloException me)
 		{
-			me.printStackTrace();
+			System.out.println(me);
+			for (StackTraceElement element: me.getStackTrace())
+			{
+				System.out.println(element);
+				System.out.println(element.getClassName()+element.getMethodName() + "(" + element.getFileName() + element.getLineNumber() + ")");
+				
+			}
+		}
+		catch(Exception e)
+		{
+			System.out.println("Caught the rethrown exception");
 		}
 		
 	}
